@@ -6,6 +6,7 @@
 go get github.com/aggarwalsomya/cmpe273-assignment2/server
 
 cd server
+
 go run *
 
 
@@ -37,6 +38,7 @@ This will get the details of location having an id 500
 
 curl -v -X GET http://localhost:8081/locations/500
 
+Output
 
 < HTTP/1.1 200 OK
 < Date: Wed, 21 Oct 2015 07:33:41 GMT
@@ -54,20 +56,19 @@ This will update the location having an id 500.
 curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way", "city":"menlo park", "state":"ca", "zip":"94025"}' http://localhost:8081/locations/500
 
 
-#Output
+Output
 
 < HTTP/1.1 201 Created
 < Date: Wed, 21 Oct 2015 07:35:07 GMT
 < Content-Length: 175
 < Content-Type: text/plain; charset=utf-8
-
 {"_id":"500","name":"saucy","address":"1 hacker way","city":"Menlo Park","state":"California","zip":"94025","Coordinate":{"lat":"37.4845750","lng":"-122.1479242"},"error":""}
 
 
 
 
 
-##DELETE:
+#DELETE:
 
 
 curl -v -X DELETE http://localhost:8081/locations/500
@@ -81,10 +82,4 @@ Output:
 < Content-Type: text/plain; charset=utf-8
 
  
-
-
-
-
-
-
 
