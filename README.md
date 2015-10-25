@@ -20,7 +20,7 @@ This will create a new location
 curl -v -H "Content-Type: application/json"  -X POST -d '{"name":"saucy", "address":"1055 e evelyn ave", "city":"sunnyvale", "state":"ca", "zip":"94086"}' http://localhost:8081/locations
 
 
-OUTPUT
+*OUTPUT
 
 < HTTP/1.1 201 Created
 
@@ -42,7 +42,7 @@ This will get the details of location having an id 500
 
 curl -v -X GET http://localhost:8081/locations/500
 
-Output
+*Output
 
 < HTTP/1.1 200 OK
 
@@ -64,7 +64,7 @@ This will update the location having an id 500.
 curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way", "city":"menlo park", "state":"ca", "zip":"94025"}' http://localhost:8081/locations/500
 
 
-Output
+*Output
 
 < HTTP/1.1 201 Created
 
@@ -87,7 +87,8 @@ curl -v -X DELETE http://localhost:8081/locations/500
 
 This will delete the location having an id 500. 
 
-Output: 
+*Output: 
+
 < HTTP/1.1 200 OK
 
 < Date: Wed, 21 Oct 2015 07:37:55 GMT
