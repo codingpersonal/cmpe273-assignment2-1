@@ -30,7 +30,7 @@ curl -v -H "Content-Type: application/json"  -X POST -d '{"name":"saucy", "addre
 
 < Content-Type: text/plain; charset=utf-8
 
-{"_id":"500","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","Coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
+{"_id":"3609","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","Coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
 
 
 
@@ -38,9 +38,9 @@ curl -v -H "Content-Type: application/json"  -X POST -d '{"name":"saucy", "addre
 
 #GET:
 
-This will get the details of location having an id 500
+This will get the details of location having an id 3609
 
-curl -v -X GET http://localhost:8081/locations/500
+curl -v -X GET http://localhost:8081/locations/3609
 
 ##Output
 
@@ -52,16 +52,16 @@ curl -v -X GET http://localhost:8081/locations/500
 
 < Content-Type: text/plain; charset=utf-8
 
-{"_id":"500","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","Coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
+{"_id":"3609","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","Coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
 
 
 
 
 #PUT
 
-This will update the location having an id 500. 
+This will update the location having an id 3609. 
 
-curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way", "city":"menlo park", "state":"ca", "zip":"94025"}' http://localhost:8081/locations/500
+curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way", "city":"menlo park", "state":"ca", "zip":"94025"}' http://localhost:8081/locations/3609
 
 
 ##Output
@@ -74,7 +74,7 @@ curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way
 
 < Content-Type: text/plain; charset=utf-8
 
-{"_id":"500","name":"saucy","address":"1 hacker way","city":"Menlo Park","state":"California","zip":"94025","Coordinate":{"lat":"37.4845750","lng":"-122.1479242"},"error":""}
+{"_id":"3609","name":"saucy","address":"1 hacker way","city":"Menlo Park","state":"California","zip":"94025","Coordinate":{"lat":"37.4845750","lng":"-122.1479242"},"error":""}
 
 
 
@@ -83,9 +83,9 @@ curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way
 #DELETE:
 
 
-curl -v -X DELETE http://localhost:8081/locations/500
+curl -v -X DELETE http://localhost:8081/locations/3609
 
-This will delete the location having an id 500. 
+This will delete the location having an id 3609. 
 
 ##Output: 
 
