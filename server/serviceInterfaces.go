@@ -5,7 +5,7 @@ import (
 )
 
 type LocationService struct {
-	Id string `json:"_id" bson:"_id"`
+	Id string `json:"id" bson:"_id"`
 	Name string `json:"name"`
 	Address string `json:"address"`
 	City string `json:"city"`
@@ -14,6 +14,6 @@ type LocationService struct {
 	Coordinate struct {
 		Lat string `json:"lat"`
 		Lng string `json:"lng"`
-	}
+	}  `json:"coordinate"`
 	ErrorMsg string `json:"error"`			// to send any error back from server to client
 }

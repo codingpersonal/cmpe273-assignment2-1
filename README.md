@@ -30,7 +30,7 @@ curl -v -H "Content-Type: application/json"  -X POST -d '{"name":"saucy", "addre
 
 < Content-Type: text/plain; charset=utf-8
 
-{"_id":"3609","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","Coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
+{"id":"3609","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
 
 
 
@@ -52,7 +52,7 @@ curl -v -X GET http://localhost:8081/locations/3609
 
 < Content-Type: text/plain; charset=utf-8
 
-{"_id":"3609","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","Coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
+{"id":"3609","name":"saucy","address":"1055 e evelyn ave","city":"sunnyvale","state":"ca","zip":"94086","coordinate":{"lat":"37.3679232","lng":"-122.0032597"},"error":""}
 
 
 
@@ -74,7 +74,7 @@ curl -v -H "Content-Type: application/json"  -X PUT -d '{"address":"1 hacker way
 
 < Content-Type: text/plain; charset=utf-8
 
-{"_id":"3609","name":"saucy","address":"1 hacker way","city":"Menlo Park","state":"California","zip":"94025","Coordinate":{"lat":"37.4845750","lng":"-122.1479242"},"error":""}
+{"id":"3609","name":"saucy","address":"1 hacker way","city":"Menlo Park","state":"California","zip":"94025","coordinate":{"lat":"37.4845750","lng":"-122.1479242"},"error":""}
 
 
 
